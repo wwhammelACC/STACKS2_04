@@ -13,6 +13,7 @@
 
 #include "data.h"
 #include <iostream>
+#include <string>       /* string */
 using std::cout;
 using std::endl;
 
