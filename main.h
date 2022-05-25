@@ -25,6 +25,11 @@ using std::endl;
  * additional directives here
  * 
  */
-
+// adding stack.h
+#include "stack.h"
+// adding multiplier
+#define MULTIPLIER 1.5 // used to test overflow and underflow
+#define RANDOM_MULTIPLIER 10 // for random testing
+#define CHOICES 6 // used to pick random operations
 
 #endif /* STACKS_MAIN_H */
