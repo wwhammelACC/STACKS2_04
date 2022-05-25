@@ -10,7 +10,6 @@
 
 #include <stdlib.h>   /* srand, rand */
 #include <time.h>     /* time */
-#include <time.h>     /* time */
 #include <string>     /* string */
 
 void rand_string(std::string*);
