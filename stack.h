@@ -21,6 +21,7 @@ string called information.
 #include <string>       /* string */
 using std::cout;
 using std::endl;
+#define DEFAULT 2
 
 class Stack {
 
@@ -32,7 +33,7 @@ public:
      */
 
     //constructor
-    Stack();
+    Stack(int);
     //destructor
     ~Stack();
     bool push(int, string*);

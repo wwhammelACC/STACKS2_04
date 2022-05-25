@@ -34,21 +34,27 @@ Stack::~Stack(){
 
 //PUSH METHOD/FUNCTION
 bool Stack::push(int id, string *str) {
+    bool flag = false;
     cout << "Push Test Line " << endl;
+    return flag;
 }
 
 //POP METHOD/FUNCTION
 bool Stack::pop(Data* ref){
+    bool flag = false;
     cout << "Pop Test Line " << endl;
+    return flag;
 }
 
 //PEEK METHOD/FUNCTION
 bool Stack::peek(Data* ref){
+    bool flag = false;
     cout << "Peek Test Line " << endl;
+    return flag;
 }
 
 //ISEMPTY METHOD/FUNCTION
-bool Stack::isEmtpy(){
+bool Stack::isEmpty(){
     //The process for isEmpty() is to return
     // true or false based on the top being -1 or not.
     return top < 0;
