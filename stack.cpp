@@ -17,28 +17,39 @@ string called information.
 
 Stack::Stack(int userSize){
     top = -1;
+    if(userSize <= DEFAULT){
+        size = userSize;
+    }else{
+        size = DEFAULT;
+    }
+    stack = new Data *[size];
 }
 
 Stack::~Stack(){
-
+    for(int i=top; i>=0; i--){
+        delete stack[i];
+    }
+    delete[] stack;
 }
 
 //PUSH METHOD/FUNCTION
 bool Stack::push(int id, string *str) {
-
+    cout << "Push Test Line " << endl;
 }
 
 //POP METHOD/FUNCTION
-bool Stack::pop(Data*){
-
+bool Stack::pop(Data* ref){
+    cout << "Pop Test Line " << endl;
 }
 
 //PEEK METHOD/FUNCTION
-bool Stack::peek(Data*){
-
+bool Stack::peek(Data* ref){
+    cout << "Peek Test Line " << endl;
 }
 
 //ISEMPTY METHOD/FUNCTION
 bool Stack::isEmtpy(){
-
+    //The process for isEmpty() is to return
+    // true or false based on the top being -1 or not.
+    return top < 0;
 }
