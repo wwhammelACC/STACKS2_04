@@ -16,7 +16,9 @@ string called information.
 #include <stdlib.h>   /* srand, rand */
 #include <time.h>     /* time */
 #include <string>     /* string */
+#include <cstring>
 
 void rand_string(std::string*);
+bool is_positive_integer(char*);
 
 #endif /* STACKS_FUNCTIONS_H */
