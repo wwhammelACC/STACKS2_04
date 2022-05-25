@@ -24,13 +24,21 @@ Stack::~Stack(){
 }
 
 //PUSH METHOD/FUNCTION
-bool Stack::push(int id, std::string *str) {
+bool Stack::push(int id, string *str) {
 
 }
 
-
 //POP METHOD/FUNCTION
+bool Stack::pop(Data*){
+
+}
 
 //PEEK METHOD/FUNCTION
+bool Stack::peek(Data*){
+
+}
 
 //ISEMPTY METHOD/FUNCTION
+bool Stack::isEmtpy(){
+
+}
