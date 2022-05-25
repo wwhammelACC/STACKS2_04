@@ -22,3 +22,15 @@ Stack::Stack(int userSize){
 Stack::~Stack(){
 
 }
+
+//PUSH METHOD/FUNCTION
+bool Stack::push(int id, std::string *str) {
+
+}
+
+
+//POP METHOD/FUNCTION
+
+//PEEK METHOD/FUNCTION
+
+//ISEMPTY METHOD/FUNCTION
