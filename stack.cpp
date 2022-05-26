@@ -35,14 +35,40 @@ Stack::~Stack(){
 //PUSH METHOD/FUNCTION
 bool Stack::push(int id, string *str) {
     bool flag = false;
-    cout << "Push Test Line " << endl;
+//    cout << "Push Test Line " << endl;
+    if (top < size - 1) {
+        if(id > 0 && !str->empty()){
+            // pointer to data struct
+            Data *myData;
+            //allocate data structure
+            myData = new Data;
+            myData->id = (id);
+            myData->information = *str;
+            stack[++top] = myData;
+            flag = true;
+        }
+    }
     return flag;
 }
 
 //POP METHOD/FUNCTION
 bool Stack::pop(Data* ref){
     bool flag = false;
-    cout << "Pop Test Line " << endl;
+//    cout << "Pop Test Line " << endl;
+    if(!isEmpty()){     // if not empty
+        //getting info from top of stack and putting it in data struct
+        ref->id = stack[top]->id;
+        ref->information = stack[top]->information;
+        //delete allocated memory
+        delete stack[top];
+        //decrement stack
+        top--;
+        flag = true;
+    }else{
+        //fill passed data struct with -1, empty string
+        ref->id = -1;
+        ref->information = "";
+    }
     return flag;
 }
 
