@@ -75,7 +75,18 @@ bool Stack::pop(Data* ref){
 //PEEK METHOD/FUNCTION
 bool Stack::peek(Data* ref){
     bool flag = false;
-    cout << "Peek Test Line " << endl;
+//    cout << "Peek Test Line " << endl;
+    if(!isEmpty()){     // if not empty
+        //getting info from top of stack and putting it in data struct
+        ref->id = stack[top]->id;
+        ref->information = stack[top]->information;
+        //'return data to caller'
+        flag = true;
+    }else{
+        //fill passed data struct with -1, empty string
+        ref->id = -1;
+        ref->information = "";
+    }
     return flag;
 }
 
